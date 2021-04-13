@@ -33,7 +33,7 @@ CONCURRENT_REQUESTS = 32
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-COOKIES_ENABLED = False
+COOKIES_ENABLED = True
 
 # Disable Telnet Console (enabled by default)
 TELNETCONSOLE_ENABLED = False
@@ -52,11 +52,11 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    # 'gb_parse.middlewares.GbParseDownloaderMiddleware': 543,
-    "rotating_proxies.middlewares.RotatingProxyMiddleware": 610,
-    "rotating_proxies.middlewares.BanDetectionMiddleware": 620,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     # 'gb_parse.middlewares.GbParseDownloaderMiddleware': 543,
+#     "rotating_proxies.middlewares.RotatingProxyMiddleware": 610,
+#     "rotating_proxies.middlewares.BanDetectionMiddleware": 620,
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -95,6 +95,6 @@ AUTOTHROTTLE_DEBUG = True
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-ROTATING_PROXY_LIST_PATH = (
-    "/Users/gefest/projects/geekbrains/data_mining/data_mining_19_03_21/proxies"
-)
+# ROTATING_PROXY_LIST_PATH = (
+#     "/Users/gefest/projects/geekbrains/data_mining/data_mining_19_03_21/proxies"
+# )
